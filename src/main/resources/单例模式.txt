@@ -1,7 +1,7 @@
 一个类只有一个实例
     ServletContext, ServletConfig, ApplicationContext
     DBPool
-
+主要问题：延迟加载，线程安全，反射，序列化
 1.饿汉
     类加载时，初始化单例对象
     私有构造
@@ -14,5 +14,7 @@
     全局访问点
 
 3.注册
+    枚举式单例：最优雅的单例
+    容器式单例：解决大批量创建单例对象的情况
 
 4.ThreadLocal
