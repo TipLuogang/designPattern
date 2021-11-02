@@ -1,0 +1,24 @@
+springaop用代理模式实现
+定义：为其他对象提供一个代理，以控制对这个对象的访问（持有对象的引用）
+作用：保护、增强对象
+缺点：类数量增加，请求处理速度变慢，增加了系统复杂度
+静态代理
+    显式声明被代理对象
+    缺点：不符合开闭原则，Son新增findJob时，需修改Father类，类是固定的
+动态代理
+    目标类Son修改时，代理类不需修改
+属于结构型模式
+基于继承
+    cglib
+
+基于接口
+   jdk
+
+代理模式与spring
+    ProxyFactoryBean
+        结合了策略模式，如果bean没有接口则使用cglib，bean有接口则使用jdk proxy
+            也可以通过配置强制使用cglib或者jdk proxy
+        AopProxy
+            CglibAopProxy
+            JdkDynamicAopProxy
+

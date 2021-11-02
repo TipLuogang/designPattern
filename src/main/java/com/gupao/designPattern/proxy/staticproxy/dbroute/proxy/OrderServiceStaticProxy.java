@@ -10,7 +10,7 @@ import java.util.Date;
 public class OrderServiceStaticProxy implements IOrderService {
 
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-    private IOrderService orderService;
+    private IOrderService orderService;//静态代理只能代理orderService
 
     public OrderServiceStaticProxy(IOrderService orderService) {
         this.orderService = orderService;

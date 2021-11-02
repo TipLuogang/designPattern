@@ -1,0 +1,19 @@
+委派模式精简程序逻辑
+策略模式消除大量ifelse
+    算法保密性、安全性
+
+
+委派模式 Delegate pattern，注重结果，统一返回（代理模式注重过程和增强）
+一种静态代理
+场景：解决多任务，统筹调度问题，使得对用户只有唯一的入口，委派作为中间类全权代理
+属于行为模式
+spring中dispatcher
+boss
+    manager
+        employeeA
+        employeeB
+        employeeC
+
+spring中类名Delegate结尾，一般都是委派，包含Dispatcher也是委派
+任务分发转化，再统一回来
+BeanDefinitionParserDelegate

@@ -13,7 +13,7 @@ public class JDKMeipo implements InvocationHandler {
         this.target = person;
         Class<? extends Person> clazz = target.getClass();
         return Proxy.newProxyInstance(clazz.getClassLoader(),
-                                        clazz.getInterfaces(),
+                                        clazz.getInterfaces(),//jdk动态代理基于接口
                                         this);
     }
 
