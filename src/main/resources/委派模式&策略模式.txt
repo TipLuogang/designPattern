@@ -17,3 +17,24 @@ boss
 spring中类名Delegate结尾，一般都是委派，包含Dispatcher也是委派
 任务分发转化，再统一回来
 BeanDefinitionParserDelegate
+
+
+策略模式 Strategy pattern
+可避免i多重分支ifelse
+缺点：客户端必须知道所有的策略，代码中产生很多的策略类增加维护难度
+场景：
+    系统中有很多类，它们的区别在于它们的行为不同
+    一个系统需要动态的在几种算法中选择一种
+comparator中compare方法
+TreeMap构造中有比较器
+
+spring中resourceReader
+类初始化，cglib，jdk，单例，原型： InstantiationStrategy(父子级策略，不同的策略可以继承的)
+
+
+
+
+
+
+
+

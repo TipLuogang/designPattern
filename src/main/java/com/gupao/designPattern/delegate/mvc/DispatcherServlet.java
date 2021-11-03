@@ -26,6 +26,8 @@ public class DispatcherServlet extends HttpServlet {
         String uri = req.getRequestURI();
         String mid = req.getParameter("mid");
 
+
+
         if ("getMemberByID".equals(uri)){//spring 中自动配置
             new MemberController().getMemberById(mid);
         }else if ("getOrderById".equals(uri)){
